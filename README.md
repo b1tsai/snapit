@@ -1,3 +1,3 @@
 # SNAP-IT
 
-REAdME
+README
