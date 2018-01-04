@@ -1,5 +1,3 @@
-# snapit
+# SNAP-IT
 
-testing testing 123
-welcome to SNAP-IT
-!!! \n !!!
+REAdME
