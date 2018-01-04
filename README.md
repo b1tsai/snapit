@@ -1,3 +1,0 @@
-# SNAP-IT
-
-README
