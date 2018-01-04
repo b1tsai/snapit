@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+snapit/__init__.py
+snapit/command_line.py
+snapit/text.py
+snapit.egg-info/PKG-INFO
+snapit.egg-info/SOURCES.txt
+snapit.egg-info/dependency_links.txt
+snapit.egg-info/entry_points.txt
+snapit.egg-info/not-zip-safe
+snapit.egg-info/requires.txt
+snapit.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+snapit-talk = snapit.command_line:main
+
