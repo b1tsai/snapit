@@ -3,6 +3,22 @@
 SNAP-IT is used to annotate exon-level splicing events detected in large RNA-sequencing datasets and identify splicing-derived candidates for immunotherapy. Rather than describing known antigens, SNAP-IT is optimized to efficiently process enormous amounts of data to uncover new immunotherapeutic targets. Candidates are topologically annotated for localization of the cassette exon to the extracellular domain such that the epitope is targetable by antibodies.
 
 
+Table of Contents
+-----------------
+
+- [Requirements](https://github.com/b1tsai/snapit/blob/README-edits/README.md#requirements)
+- [Installation](https://github.com/b1tsai/snapit/blob/README-edits/README.md#installation)
+- [Usage](https://github.com/b1tsai/snapit/blob/README-edits/README.md#usage) 
+  - [Input](https://github.com/b1tsai/snapit/blob/README-edits/README.md#input)
+    - [Input file format](https://github.com/b1tsai/snapit/blob/README-edits/README.md#input-file-format)
+    - [Columns](https://github.com/b1tsai/snapit/blob/README-edits/README.md#columns)
+    - [Example input](https://github.com/b1tsai/snapit/blob/README-edits/README.md#example-input)
+  - [Output](https://github.com/b1tsai/snapit/blob/README-edits/README.md#output)
+    - [Output file format](https://github.com/b1tsai/snapit/blob/README-edits/README.md#output-file-format)
+    - [Columns](https://github.com/b1tsai/snapit/blob/README-edits/README.md#columns-1)
+    - [Example output](https://github.com/b1tsai/snapit/blob/README-edits/README.md#example-output)
+
+
 Requirements
 ------------
 
