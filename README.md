@@ -107,6 +107,14 @@ extramemDomains | list of extramembrane domains of protein as predicted by TMHMM
 alignmentScores | score from 0 to 1 for alignment of upstream and downstream exons to the CDS of gene as [alignment score # of upstream exon, alignment score # of downstream exon]
 matchedExonUP | matched exons are mapped to topological annotation from UniProtKb to determine localization of the cassette exon, [Upstream] if upstream exon passed threshold for alignment to gene CDS, [Downstream] if downstream exon passed threshold for alignment to gene CDS, [Both] if both upstream and downstream exons passed threshold for alignment to gene CDS, or [N/A] if neither exons passed threshold for alignment to gene CDS
 matchedExonTMHMM | matched exons are mapped to topology predictions from TMHMM to determine localization of the cassette exon, [Upstream] if upstream exon passed threshold for alignment to gene CDS, [Downstream] if downstream exon passed threshold for alignment to gene CDS, [Both] if both upstream and downstream exons passed threshold for alignment to gene CDS, or [N/A] if neither exons passed threshold for alignment to gene CDS
+extracellular | [TRUE] if cassette exon has been determined to localize to an extracellular domain of the protein, [FALSE] if cassette exon has not been determined to localize to an extracellular domain of the protein
+manual | [TRUE] if splicing event has been flagged for additional manual annotation because SNAP-IT cannot confidently declare the cassette as extracellular, nor can it confidently discard the event is non-extracellular, [FALSE] if splicing event has not been flagged for additional manual annotation
+isoforms | lists of refSeq isoforms that have passed the score threshold during NBCI protein BLAST of the neoantigenic region including and excluding the cassette exon as [[refSeq ID \| protein name and species, included exon aligned peptide sequence), e-score], [refSeq ID \| protein name and species, excluded exon aligned peptide sequence), e-score]]
+Sample 1 | PSI (percent spliced in) value as [#]
+Sample 2 | PSI (percent spliced in) value as [#]
+Sample 3 | PSI (percent spliced in) value as [#]
+... | PSI (percent spliced in) value as [#]
+Sample n | PSI (percent spliced in) value as [#]
 
 
 #### Example output: ####
