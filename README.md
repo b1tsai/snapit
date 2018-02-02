@@ -88,6 +88,15 @@ ENSG00000000003.14_2 | TSPAN6 | chrX | - | 99885755 | 99885863 | 99882105 | 9988
 
 ### Output ###
 
+SNAP-IT gives 5 output files:
+
+1. **Summary.txt** gives a summary of how SNAP-IT has classified each splicing event
+2. **All.txt** give the output of all splicing events
+3. **Filtered.txt** gives the output of splicing events that pass quality control
+4. **Manual_Annotate.txt** gives the output of splicing events that pass quality control and are flagged for additional manual annotation because SNAP-IT cannot confidently declare the cassette exons as extracellular, nor can it confidently discard the events as non-extracellular
+5. **Extracellular_Cassette.txt** gives the output of splicing events that pass quality control and have cassette exons that are determined to localize to an extracellular domain of the protein
+
+
 #### Output file format: ####
 
 Each _row_ represents a single splicing event.
