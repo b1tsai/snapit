@@ -38,7 +38,13 @@ Install the SNAP-IT package from PyPI with command:
 pip3 install snapit -–user
 ```
 
-or download the source code from github and decompress the package.
+or download the source code from GitHub or PyPI and decompress the package.
+
+If you already have SNAP-IT installed and want to update to the latest version:
+
+```shell
+pip3 install snapit -–user --upgrade
+```
 
 
 Usage
