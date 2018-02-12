@@ -13,6 +13,10 @@ Table of Contents
     - [Input file format](https://github.com/b1tsai/snapit/blob/README-edits/README.md#input-file-format)
     - [Columns](https://github.com/b1tsai/snapit/blob/README-edits/README.md#columns)
     - [Example input](https://github.com/b1tsai/snapit/blob/README-edits/README.md#example-input)
+  - [Running SNAP-IT](https://github.com/b1tsai/snapit/blob/README-edits/README.md#running-SNAP-IT)
+    - [Interactive mode](https://github.com/b1tsai/snapit/blob/README-edits/README.md#interactive-mode)
+    - [Single command line mode](https://github.com/b1tsai/snapit/blob/README-edits/README.md#single-command-line-mode)
+      - [List of options](https://github.com/b1tsai/snapit/blob/README-edits/README.md#list-of-options)
   - [Output](https://github.com/b1tsai/snapit/blob/README-edits/README.md#output)
     - [Output file format](https://github.com/b1tsai/snapit/blob/README-edits/README.md#output-file-format)
     - [Columns](https://github.com/b1tsai/snapit/blob/README-edits/README.md#columns-1)
@@ -91,6 +95,43 @@ AC | GeneName | chr | strand | exonStart | exonEnd | upstreamES | upstreamEE | d
 :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
 ENSG00000000003.14_2 | TSPAN6 | chrX | - | 99885755 | 99885863 | 99882105 | 99884983 | 99887481 | 99887565 | 0.9662 | 0.957 | 0.9582 | 0.9507 | 0.975 | 0.9444 | 0.8904 | 0.964 | 0.9856 | 1 | 1 | 0.9897 | 0.9847 | 0.9882 | 0.9649 | 0.9565 | 0.9954 | 0.9531 | 0.9952 | 0.9401 | 0.9812 | 0.9754 | 0.9071 | 0.9734 | 0.9617 |
 | ENSG00000000419.12_2 | DPM1 | chr20 | - | 49557401 | 49557470 | 49552684 | 49552799 | 49558567 | 49558663 | 0.9579 | 0.9589 | 0.936 | 0.9639 | 0.9392 | 0.9369 | 0.9354 | 0.9637 | 0.9392 | 0.9258 | 0.9471 | 0.9609 | 0.9553 | 0.9645 | 0.9325 | 0.9493 | 0.966 | 0.9347 | 0.9366 | 0.9459 | 0.965 | 0.941 | 0.9633 | 0.9676 | 0.9623
+
+
+### Running SNAP-IT ###
+
+From the command line:
+
+#### Interactive mode: ####
+
+```shell
+python3 /u/path/to/multiple-comparison.py 
+```
+
+#### Single command line mode: ####
+
+```shell
+python3 /u/path/to/multiple-comparison-command.py -i /path/to/input_file.py -g 19 -t 0.9 -e 0.0001 -j 30 
+```
+
+##### List of options: #####
+
+```shell
+python3 /path/to/multiple-comparison-command.py -h 
+```
+
+```shell
+python3 /path/to/multiple-comparison-command.py --help
+```
+
+Arguments | Description
+--- | ---
+-h, --help     | show this help message and exit
+-i INPUT_FILE  | The input file name from rMATS
+-g {19,37,38}  | The reference genome build used in rMATS: '38' - GRCh38/hg38 '37' or '19' - GRCh37/hg19
+-t THRESHOLD   | The percent match threshold for aligning exons to CDS: (0.0 - 1.0)
+-e E_SCORE     | The e-score threshold for BLASTing hits to possible isoforms
+-j JUNCTION    | The number of bases upstream and downstream to be assigned to the exon junction
+
 
 ### Output ###
 
